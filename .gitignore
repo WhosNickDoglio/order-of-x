@@ -1,0 +1,5 @@
+.next
+.vercel
+.nova
+node_modules
+.env

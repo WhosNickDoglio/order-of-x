@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next"
+  },
+  "dependencies": {
+    "dayjs": "^1.9.0",
+    "fuse.js": "^6.4.1",
+    "marvel": "https://github.com/swang/marvel.git#add-support-promises",
+    "next": "^9.5.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "use-persisted-state": "^0.3.0"
+  }
+}
