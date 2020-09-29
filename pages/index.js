@@ -267,6 +267,7 @@ const IndexPage = ({ series, dates, issues }) => {
             grid-template-columns: 300px 1fr;
           }
           .series {
+            height: 100%;
           }
           h1 {
             font-size: 18px;
@@ -286,9 +287,9 @@ const IndexPage = ({ series, dates, issues }) => {
           }
           .series-inner {
             padding: 20px;
-            position: sticky;
-            top: 0;
             font-size: 14px;
+            overflow: auto;
+            height: 100vh;
           }
           .search-filter {
             padding: 10px;
@@ -315,6 +316,8 @@ const IndexPage = ({ series, dates, issues }) => {
           .issues {
             padding: 20px;
             min-width: 0;
+            height: 100vh;
+            overflow-y: auto;
             opacity: ${mounted ? 1 : 0};
           }
           .issues-group {
@@ -347,6 +350,10 @@ const IndexPage = ({ series, dates, issues }) => {
           @media (max-width: 768px) {
             .index {
               display: block;
+            }
+            .series-inner,
+            .issues {
+              height: auto;
             }
           }
         `}</style>
