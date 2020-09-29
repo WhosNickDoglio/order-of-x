@@ -40,7 +40,13 @@ const Issue = ({
           : null
       }
     >
-      <img className="thumbnail" loading="lazy" src={thumbnail} />
+      <img
+        className="thumbnail"
+        loading="lazy"
+        src={thumbnail}
+        width="300"
+        height="450"
+      />
       <div className="title">{title}</div>
       <style jsx>{`
         .issue {
@@ -50,6 +56,7 @@ const Issue = ({
           filter: grayscale(${isRead ? 1 : 0});
           min-width: 0;
           max-width: 200px;
+          width: 100%;
           color: black;
           white-space: initial;
           vertical-align: top;
@@ -59,6 +66,7 @@ const Issue = ({
           width: 100%;
           height: auto;
           margin-bottom: 5px;
+          background-color: #f1f1f1;
         }
         .title {
           font-weight: 600;
