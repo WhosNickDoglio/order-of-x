@@ -37,7 +37,7 @@ const filterIssue = issue => {
 const formatIssue = issue => {
   const date = issue.dates.find(dateItem => dateItem.type == 'onsaleDate').date;
   return {
-    id: issue.digitalId,
+    id: issue.digitalId || issue.id, // digitalId is not unique when unavailable
     title: issue.title,
     series: issue.series.name,
     date: date,
